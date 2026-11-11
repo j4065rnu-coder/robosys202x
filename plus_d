@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+import sys
+fu=0
+sei=0
+zero=0
+for n in sys.argv[1:]:
+    if float(n)<0.0:
+        fu=fu+1
+    elif float(n)>0.0:
+          sei=sei+1
+    elif float(n)==0.0:
+          zero=zero+1
+
+print("負の数",fu)
+print("負と非負の数",fu+sei)
+print("負と非負と０の数",fu+sei+zero)
+
